@@ -1,0 +1,19 @@
+<div class="alert alert-primary" role="alert">
+    <h2>Detalles del producto</h2>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <img src="" class="card-img-top">
+    <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">
+            ID: {{ product.id }}
+        </p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <span></span>
+        <li class="list-group-item">SKU: {{ product.sku }}</li>
+        <li class="list-group-item">Código de barras: {{ product.barcode }}</li>
+        <li class="list-group-item">Precio: {{ product.price }}</li>
+    </ul>
+</div>

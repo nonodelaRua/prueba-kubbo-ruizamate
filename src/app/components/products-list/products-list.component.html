@@ -1,0 +1,51 @@
+<div class="alert alert-primary" role="alert">
+    <h2>Listado de productos</h2>
+</div>
+
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="productsList">
+
+        <!-- Product ID Column -->
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> ID </th>
+            <td mat-cell *matCellDef="let product" (click)="viewDetails(product.id)"> {{product.id}} </td>
+        </ng-container>
+
+        <!-- Product NAME Column -->
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Nombre del producto </th>
+            <td mat-cell *matCellDef="let product" (click)="viewDetails(product.id)"> {{product.name}} </td>
+        </ng-container>
+
+        <!-- Product SKU Column -->
+        <ng-container matColumnDef="sku">
+            <th mat-header-cell *matHeaderCellDef> SKU </th>
+            <td mat-cell *matCellDef="let product" (click)="viewDetails(product.id)"> {{product.sku}} </td>
+        </ng-container>
+
+        <!-- Product BARCODE Column -->
+        <ng-container matColumnDef="barcode">
+            <th mat-header-cell *matHeaderCellDef> Código de barras </th>
+            <td mat-cell *matCellDef="let product" (click)="viewDetails(product.id)"> {{product.barcode}} </td>
+        </ng-container>
+
+        <!-- Product PRICE Column -->
+        <ng-container matColumnDef="price">
+            <th mat-header-cell *matHeaderCellDef> Precio </th>
+            <td mat-cell *matCellDef="let product" (click)="viewDetails(product.id)"> {{product.price}} €</td>
+        </ng-container>
+
+        <!-- Product ENABLED Column -->
+        <ng-container matColumnDef="enabled">
+            <th mat-header-cell *matHeaderCellDef> ¿Activo? </th>
+            <td mat-cell *matCellDef="let product">
+                <mat-slide-toggle [checked]="product.enabled"></mat-slide-toggle>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>

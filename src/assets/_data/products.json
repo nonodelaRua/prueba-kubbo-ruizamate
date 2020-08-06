@@ -1,0 +1,83 @@
+[
+    {
+        "id": 0,
+        "name": "Nike Air Force 1 - White",
+        "sku": "SKU 000000",
+        "barcode": "0123456789",
+        "image": "",
+        "price": "100.0",
+        "enabled": true
+    },
+    {
+        "id": 1,
+        "name": "Nike Air Force 1 - Black",
+        "sku": "SKU 000001",
+        "barcode": "9012345678",
+        "image": "",
+        "price": "105.0",
+        "enabled": true
+    },
+    {
+        "id": 2,
+        "name": "Nike Court Vision - white/white",
+        "sku": "SKU 000002",
+        "barcode": "8901234567",
+        "image": "",
+        "price": "55.0",
+        "enabled": true
+    },
+    {
+        "id": 3,
+        "name": "Nike Court Vision - white/black",
+        "sku": "SKU 000003",
+        "barcode": "7890123456",
+        "image": "",
+        "price": "50.0",
+        "enabled": true
+    },
+    {
+        "id": 4,
+        "name": "Nike Court Borough Low 2",
+        "sku": "SKU 000004",
+        "barcode": "6789012345",
+        "image": "",
+        "price": "35.0",
+        "enabled": false
+    },
+    {
+        "id": 5,
+        "name": "Nike Air Force 1 Low Mesh",
+        "sku": "SKU 000005",
+        "barcode": "5678901234",
+        "image": "",
+        "price": "110.0",
+        "enabled": false
+    },
+    {
+        "id": 6,
+        "name": "Nike Air Max 270",
+        "sku": "SKU 000006",
+        "barcode": "4567890123",
+        "image": "",
+        "price": "150.0",
+        "enabled": true
+    },
+    {
+        "id": 7,
+        "name": "Nike Air Force 1 '07 LV8",
+        "sku": "SKU 000007",
+        "barcode": "3456789012",
+        "image": "",
+        "price": "110.0",
+        "enabled": true
+    },
+    {
+        "id": 8,
+        "name": "Nike chanclas Benassi",
+        "sku": "SKU 000008",
+        "barcode": "2345678901",
+        "image": "",
+        "price": "28.0",
+        "enabled": false
+    }
+]
